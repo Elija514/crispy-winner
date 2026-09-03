@@ -174,7 +174,7 @@ body {
 
     <div id="otpError" class="error-message" aria-live="polite"></div>
 
-<div class="timer">Resend OTP in <span id="countdown">110</span> seconds</div>
+<div class="timer">Resend OTP in <span id="countdown">30</span> seconds</div>
     
     <button class="submit-btn" disabled>Submit</button>
   </div>
@@ -290,7 +290,7 @@ inputs.forEach((input, index) => {
 });
 
 // Timer
-let timeLeft = 110;
+let timeLeft = 30;
 const timer = setInterval(() => {
   timeLeft--;
   countdownEl.textContent = timeLeft;
